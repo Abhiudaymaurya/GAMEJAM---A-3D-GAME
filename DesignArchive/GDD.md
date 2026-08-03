@@ -19,28 +19,31 @@
 - Horror comes from atmosphere, not jump scares.
 - Every puzzle reveals more of the story.
 - Boss is the climax, not the main gameplay.
----
+
+
 ## Basic Map Outline-
 
-*Entrance - Start Point
+---
+Entrance - Start Point
     │  - puzzle 
 Reception - area
  ┌──┴                    
-Lab (2nd area)   Office -(4rd area)
+Lab (2nd area)   Office -(5th area)
  │                              │
  │                              │
- │(3rd area)          │
-Storage  Library   Storage Room
+ │(3rd area)                    │
+Library     Storage - (4th area)│
  │                              │
  │                              │
  │                              │
- └───│──────┘
+ └───│──────────────────────────┘
       │
       │
       │
  Secret Elevator - locked(need to go to office)
       │
  Boss Arena* -- Last BossFight (as per GameJam rule) 
+---
 
 ### info-
 
