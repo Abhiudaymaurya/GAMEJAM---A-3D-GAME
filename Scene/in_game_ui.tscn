@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b1twf6uuhv7qv"]
 
-[ext_resource type="Script" uid="uid://7rgdmtkduqid" path="res://in_game_ui.gd" id="1_kenku"]
+[ext_resource type="Script" uid="uid://7rgdmtkduqid" path="res://Scripts/in_game_ui.gd" id="1_kenku"]
 
 [node name="InGame UI" type="Control" unique_id=1340118020]
 layout_mode = 3

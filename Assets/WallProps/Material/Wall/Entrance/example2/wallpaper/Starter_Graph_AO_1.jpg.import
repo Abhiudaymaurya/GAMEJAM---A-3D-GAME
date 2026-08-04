@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0ilokul06g75"
-path.s3tc="res://.godot/imported/Starter_Graph_AO_1.jpg-13fb44244e53b453e552b5494f28b670.s3tc.ctex"
+path.etc2="res://.godot/imported/Starter_Graph_AO_1.jpg-13fb44244e53b453e552b5494f28b670.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WallProps/Material/Wall/Entrance/example2/wallpaper/Starter_Graph_AO_1.jpg"
-dest_files=["res://.godot/imported/Starter_Graph_AO_1.jpg-13fb44244e53b453e552b5494f28b670.s3tc.ctex"]
+dest_files=["res://.godot/imported/Starter_Graph_AO_1.jpg-13fb44244e53b453e552b5494f28b670.etc2.ctex"]
 
 [params]
 
