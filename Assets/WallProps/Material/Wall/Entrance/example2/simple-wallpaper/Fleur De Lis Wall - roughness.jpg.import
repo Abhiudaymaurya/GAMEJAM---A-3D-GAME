@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi8ooo7ry2qbc"
-path.s3tc="res://.godot/imported/Fleur De Lis Wall - roughness.jpg-390209aca5d457a8efc769b2fad83081.s3tc.ctex"
+path.etc2="res://.godot/imported/Fleur De Lis Wall - roughness.jpg-390209aca5d457a8efc769b2fad83081.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WallProps/Material/Wall/Entrance/example2/simple-wallpaper/Fleur De Lis Wall - roughness.jpg"
-dest_files=["res://.godot/imported/Fleur De Lis Wall - roughness.jpg-390209aca5d457a8efc769b2fad83081.s3tc.ctex"]
+dest_files=["res://.godot/imported/Fleur De Lis Wall - roughness.jpg-390209aca5d457a8efc769b2fad83081.etc2.ctex"]
 
 [params]
 
