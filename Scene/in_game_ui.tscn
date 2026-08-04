@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://b1twf6uuhv7qv"]
+
+[ext_resource type="Script" uid="uid://7rgdmtkduqid" path="res://Scripts/in_game_ui.gd" id="1_kenku"]
+
+[node name="InGame UI" type="Control" unique_id=1340118020]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kenku")
+
+[node name="DebugConsole" type="VBoxContainer" parent="." unique_id=1237878579]
+visible = false
+z_index = 999
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+alignment = 2
+
+[node name="DebugResults" type="VBoxContainer" parent="DebugConsole" unique_id=763197365]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 2
+
+[node name="LineEdit" type="LineEdit" parent="DebugConsole" unique_id=714570131]
+layout_mode = 2
+
+[node name="InventoryDisplay" type="VBoxContainer" parent="." unique_id=96669328]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -462.0
+offset_top = -230.0
+offset_right = 462.0
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="InventoryHead" type="HBoxContainer" parent="InventoryDisplay" unique_id=1575910682]
+layout_mode = 2
+
+[node name="InventoryOptions" type="HBoxContainer" parent="InventoryDisplay/InventoryHead" unique_id=1471622355]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="InventoryDisplay/InventoryHead" unique_id=1945408126]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "X"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InventoryDisplay" unique_id=1492604051]
+layout_mode = 2
+
+[node name="Panel1" type="Panel" parent="InventoryDisplay/HBoxContainer" unique_id=274956794]
+custom_minimum_size = Vector2(460, 460)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="InventoryDisplay/HBoxContainer/Panel1" unique_id=1991665749]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ContentList" type="VBoxContainer" parent="InventoryDisplay/HBoxContainer/Panel1/ScrollContainer" unique_id=2110984849]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="InventoryDisplay/HBoxContainer/Panel1/ScrollContainer/ContentList" unique_id=355785616]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+text = "uwuzxcxzcxc"
+
+[node name="Button2" type="Button" parent="InventoryDisplay/HBoxContainer/Panel1/ScrollContainer/ContentList" unique_id=276563085]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+text = "uwu"
+
+[node name="Button3" type="Button" parent="InventoryDisplay/HBoxContainer/Panel1/ScrollContainer/ContentList" unique_id=1605953861]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+text = "uwu"
+
+[node name="Button4" type="Button" parent="InventoryDisplay/HBoxContainer/Panel1/ScrollContainer/ContentList" unique_id=61344142]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+text = "uwu"
+
+[node name="Button5" type="Button" parent="InventoryDisplay/HBoxContainer/Panel1/ScrollContainer/ContentList" unique_id=1750053689]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+text = "uwu"
+
+[node name="Panel2" type="Panel" parent="InventoryDisplay/HBoxContainer" unique_id=2096684196]
+custom_minimum_size = Vector2(460, 460)
+layout_mode = 2
