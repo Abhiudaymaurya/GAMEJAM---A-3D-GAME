@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ct18e1ypq0xo7"]
+
+[ext_resource type="Texture2D" uid="uid://dqw8phle6bvpy" path="res://Assets/WallProps/Material/Wall/Entrance/Framed_Wallpaper_ufsnadydy_1K_BaseColor.jpg" id="1_5y6qx"]
+[ext_resource type="Texture2D" uid="uid://hh1oe4dpeyef" path="res://Assets/WallProps/Material/Wall/Entrance/Framed_Wallpaper_ufsnadydy_1K_Normal.jpg" id="2_a8t7f"]
+[ext_resource type="Texture2D" uid="uid://c46g17kp7rlmx" path="res://Assets/WallProps/Material/Wall/Entrance/Framed_Wallpaper_ufsnadydy_1K_AO.jpg" id="2_y877r"]
+[ext_resource type="Texture2D" uid="uid://5burr7wtvm55" path="res://Assets/WallProps/Material/Wall/Entrance/Framed_Wallpaper_ufsnadydy_1K_Roughness.jpg" id="3_mkfpy"]
+
+[resource]
+albedo_texture = ExtResource("1_5y6qx")
+roughness = 0.5
+roughness_texture = ExtResource("3_mkfpy")
+normal_enabled = true
+normal_texture = ExtResource("2_a8t7f")
+ao_texture = ExtResource("2_y877r")
+uv1_scale = Vector3(8.35, 8.35, 8.35)

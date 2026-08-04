@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b885841ntig2o"]
+
+[ext_resource type="Texture2D" uid="uid://b5vtix3d8sbcd" path="res://Assets/WallProps/Material/ceiling/Entrance/rough_wood_diff_1k.jpg" id="1_qo0ur"]
+[ext_resource type="Texture2D" uid="uid://bsgmltkocd11y" path="res://Assets/WallProps/Material/ceiling/Entrance/rough_wood_nor_gl_1k.jpg" id="2_jtv5c"]
+[ext_resource type="Texture2D" uid="uid://bwyoy4ody1qyd" path="res://Assets/WallProps/Material/ceiling/Entrance/rough_wood_rough_1k.jpg" id="3_as0bs"]
+
+[resource]
+albedo_texture = ExtResource("1_qo0ur")
+roughness = 0.35
+roughness_texture = ExtResource("3_as0bs")
+normal_enabled = true
+normal_texture = ExtResource("2_jtv5c")
+uv1_scale = Vector3(1.575, 1.575, 1.575)
+uv1_triplanar = true
