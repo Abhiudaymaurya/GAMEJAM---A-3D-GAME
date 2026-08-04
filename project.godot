@@ -15,5 +15,24 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="GameJam - A 3d Game"
+run/main_scene="uid://bmcmibhd2rlp"
 config/features=PackedStringArray("4.7")
 config/icon="res://icon.svg"
+
+[debug]
+
+settings/stdout/print_fps=true
+settings/stdout/print_gpu_profile=true
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://DesignArchive/": "purple",
+"res://Scene/": "yellow",
+"res://Script/": "teal"
+}
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"

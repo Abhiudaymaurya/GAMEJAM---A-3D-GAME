@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dhcp7gsomntiq"]
+
+[ext_resource type="Texture2D" uid="uid://c8pycxnrht0ax" path="res://Assets/WallProps/Material/Wall/Entrance/example2/wallpaper/Starter_Graph_BaseColor.jpg" id="1_k28hm"]
+[ext_resource type="Texture2D" uid="uid://bo4g6rm6hg00i" path="res://Assets/WallProps/Material/Wall/Entrance/example2/wallpaper/Starter_Graph_Normal.jpg" id="2_7rcbi"]
+[ext_resource type="Texture2D" uid="uid://ynqom5hk4jit" path="res://Assets/WallProps/Material/Wall/Entrance/example2/wallpaper/Starter_Graph_Roughness.jpg" id="2_eqdmn"]
+[ext_resource type="Texture2D" uid="uid://d0ilokul06g75" path="res://Assets/WallProps/Material/Wall/Entrance/example2/wallpaper/Starter_Graph_AO_1.jpg" id="2_ixml8"]
+
+[resource]
+albedo_texture = ExtResource("1_k28hm")
+roughness_texture = ExtResource("2_eqdmn")
+normal_enabled = true
+normal_texture = ExtResource("2_7rcbi")
+ao_enabled = true
+ao_texture = ExtResource("2_ixml8")
+uv1_triplanar = true

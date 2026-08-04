@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bqetuhsx2xnhk"]
+
+[ext_resource type="Texture2D" uid="uid://cahy0x6diux6u" path="res://Assets/WallProps/Material/Floor/Entrance/agedplanks1-albedo.png" id="1_3x501"]
+[ext_resource type="Texture2D" uid="uid://r3ry2pua3ce1" path="res://Assets/WallProps/Material/Floor/Entrance/agedplanks1-normal.png" id="2_rhclq"]
+
+[resource]
+albedo_color = Color(0.7121294, 0.7121294, 0.71212935, 1)
+albedo_texture = ExtResource("1_3x501")
+roughness = 0.21
+normal_enabled = true
+normal_texture = ExtResource("2_rhclq")
