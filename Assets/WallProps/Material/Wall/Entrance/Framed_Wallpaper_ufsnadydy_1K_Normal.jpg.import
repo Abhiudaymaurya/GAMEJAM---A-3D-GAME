@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hh1oe4dpeyef"
-path.etc2="res://.godot/imported/Framed_Wallpaper_ufsnadydy_1K_Normal.jpg-6ac64fa8e417e533929c39aa62911e30.etc2.ctex"
+path.s3tc="res://.godot/imported/Framed_Wallpaper_ufsnadydy_1K_Normal.jpg-6ac64fa8e417e533929c39aa62911e30.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WallProps/Material/Wall/Entrance/Framed_Wallpaper_ufsnadydy_1K_Normal.jpg"
-dest_files=["res://.godot/imported/Framed_Wallpaper_ufsnadydy_1K_Normal.jpg-6ac64fa8e417e533929c39aa62911e30.etc2.ctex"]
+dest_files=["res://.godot/imported/Framed_Wallpaper_ufsnadydy_1K_Normal.jpg-6ac64fa8e417e533929c39aa62911e30.s3tc.ctex"]
 
 [params]
 

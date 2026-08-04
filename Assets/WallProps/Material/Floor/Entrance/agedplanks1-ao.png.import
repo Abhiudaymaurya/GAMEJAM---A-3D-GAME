@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hixwull86uft"
-path.etc2="res://.godot/imported/agedplanks1-ao.png-1137d8013981dd3cf15dead8b3bd0e0a.etc2.ctex"
+path.s3tc="res://.godot/imported/agedplanks1-ao.png-1137d8013981dd3cf15dead8b3bd0e0a.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WallProps/Material/Floor/Entrance/agedplanks1-ao.png"
-dest_files=["res://.godot/imported/agedplanks1-ao.png-1137d8013981dd3cf15dead8b3bd0e0a.etc2.ctex"]
+dest_files=["res://.godot/imported/agedplanks1-ao.png-1137d8013981dd3cf15dead8b3bd0e0a.s3tc.ctex"]
 
 [params]
 

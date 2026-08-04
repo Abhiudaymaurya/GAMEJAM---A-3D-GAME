@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5vtix3d8sbcd"
-path.etc2="res://.godot/imported/rough_wood_diff_1k.jpg-bcda227fbfec3cfe728f2a406324e62e.etc2.ctex"
+path.s3tc="res://.godot/imported/rough_wood_diff_1k.jpg-bcda227fbfec3cfe728f2a406324e62e.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WallProps/Material/ceiling/Entrance/rough_wood_diff_1k.jpg"
-dest_files=["res://.godot/imported/rough_wood_diff_1k.jpg-bcda227fbfec3cfe728f2a406324e62e.etc2.ctex"]
+dest_files=["res://.godot/imported/rough_wood_diff_1k.jpg-bcda227fbfec3cfe728f2a406324e62e.s3tc.ctex"]
 
 [params]
 
