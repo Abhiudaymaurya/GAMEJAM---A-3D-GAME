@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bi8ooo7ry2qbc" path="res://Assets/WallProps/Material/Wall/Entrance/example2/simple-wallpaper/Fleur De Lis Wall - roughness.jpg" id="2_vr2p4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ijmi1"]
+load_path = "res://.godot/imported/Fleur De Lis Wall - albedo.jpg-dbb01ff1d5da40ea1e148148c277f57c.s3tc.ctex"
 
 [resource]
 albedo_texture = SubResource("CompressedTexture2D_ijmi1")
