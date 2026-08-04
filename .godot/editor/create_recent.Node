@@ -1,8 +1,0 @@
-StaticBody3D
-Camera3D
-PinJoint3D
-Node3D
-RigidBody3D
-CSGBox3D
-MeshInstance3D
-OmniLight3D
