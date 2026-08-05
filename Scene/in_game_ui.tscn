@@ -30,6 +30,8 @@ alignment = 2
 
 [node name="LineEdit" type="LineEdit" parent="DebugConsole" unique_id=714570131]
 layout_mode = 2
+keep_editing_on_text_submit = true
+emoji_menu_enabled = false
 
 [node name="InventoryDisplay" type="VBoxContainer" parent="." unique_id=96669328]
 layout_mode = 1
@@ -105,3 +107,5 @@ text = "uwu"
 [node name="Panel2" type="Panel" parent="InventoryDisplay/HBoxContainer" unique_id=2096684196]
 custom_minimum_size = Vector2(460, 460)
 layout_mode = 2
+
+[connection signal="text_submitted" from="DebugConsole/LineEdit" to="." method="_run_command"]
