@@ -9,7 +9,7 @@ albedo_texture = ExtResource("2_tgux0")
 [node name="casual_male" unique_id=1876527881 instance=ExtResource("1_b6o27")]
 
 [node name="Skeleton3D" parent="Rig" parent_id_path=PackedInt32Array(2107730063) index="0" unique_id=1000721015]
-bones/0/position = Vector3(-9.094947e-15, -0.019139731, 0.008499017)
+bones/0/position = Vector3(-1.8189905e-14, 0.00023935531, 0.008499017)
 bones/0/rotation = Quaternion(0.7071067, -0.00028314246, 0.00028299936, 0.70710677)
 bones/1/rotation = Quaternion(-0.083555855, -3.6159086e-05, -0.0007073321, 0.99650294)
 bones/2/rotation = Quaternion(0.10846108, 0.0006267602, -0.003319343, 0.994095)

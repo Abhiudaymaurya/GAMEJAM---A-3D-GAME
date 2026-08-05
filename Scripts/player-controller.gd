@@ -21,7 +21,7 @@ func _physics_process(delta: float) -> void:
 	if direction != Vector3.ZERO:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
-		#HERE (the anim name is Anim.play("Rig|man_walk_root_motion") this part)
+		#HERE (place the Walking anim here ) use "Rig|man_walk_in_place"
 		var target_angle := atan2(direction.x, direction.z)
 		rotation.y = lerp_angle(rotation.y, target_angle, ROTATION_SPEED * delta)
 	else:
