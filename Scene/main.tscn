@@ -155,13 +155,12 @@ shadow_enabled = true
 
 [node name="invisible_wall" type="MeshInstance3D" parent="Entrance_structure" unique_id=443632342]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5616097, 2.0160997, -0.08563414)
-visible = false
 mesh = SubResource("ArrayMesh_3amdw")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Entrance_structure/invisible_wall" unique_id=1919621863]
+visible = false
 
 [node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="Entrance_structure/invisible_wall/StaticBody3D" unique_id=2043893798]
-visible = false
 shape = SubResource("ConcavePolygonShape3D_1xcnr")
 
 [node name="floor" type="MeshInstance3D" parent="Entrance_structure" unique_id=773876894]
