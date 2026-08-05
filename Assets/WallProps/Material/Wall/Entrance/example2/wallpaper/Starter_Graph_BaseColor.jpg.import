@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8pycxnrht0ax"
-path.etc2="res://.godot/imported/Starter_Graph_BaseColor.jpg-94dcfc49dad015cd9c8c04c882f6f694.etc2.ctex"
+path.s3tc="res://.godot/imported/Starter_Graph_BaseColor.jpg-94dcfc49dad015cd9c8c04c882f6f694.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WallProps/Material/Wall/Entrance/example2/wallpaper/Starter_Graph_BaseColor.jpg"
-dest_files=["res://.godot/imported/Starter_Graph_BaseColor.jpg-94dcfc49dad015cd9c8c04c882f6f694.etc2.ctex"]
+dest_files=["res://.godot/imported/Starter_Graph_BaseColor.jpg-94dcfc49dad015cd9c8c04c882f6f694.s3tc.ctex"]
 
 [params]
 

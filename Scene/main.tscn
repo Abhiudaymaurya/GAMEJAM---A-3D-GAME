@@ -3,6 +3,7 @@
 [ext_resource type="Material" uid="uid://bqetuhsx2xnhk" path="res://Assets/WallProps/Material/Floor/Entrance/agedplanks.tres" id="1_f6udf"]
 [ext_resource type="Material" uid="uid://c2dyl2bh2w1p5" path="res://Assets/WallProps/Material/Wall/Entrance/example2/simple-wallpaper/simple_wallpaper.tres" id="2_r34rm"]
 [ext_resource type="Material" uid="uid://b885841ntig2o" path="res://Assets/WallProps/Material/ceiling/Entrance/ceiling_material.tres" id="3_r34rm"]
+[ext_resource type="PackedScene" uid="uid://c82xd3ovggq6p" path="res://Scene/player.tscn" id="4_2wwxx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rlixt"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -10,12 +11,12 @@ sky_horizon_color = Color(0, 0, 0, 1)
 ground_bottom_color = Color(0, 0, 0, 1)
 ground_horizon_color = Color(0, 0, 0, 1)
 
-[sub_resource type="Sky" id="Sky_f6udf"]
+[sub_resource type="Sky" id="Sky_2wwxx"]
 sky_material = SubResource("ProceduralSkyMaterial_rlixt")
 
 [sub_resource type="Environment" id="Environment_sblpm"]
 background_mode = 2
-sky = SubResource("Sky_f6udf")
+sky = SubResource("Sky_2wwxx")
 tonemap_mode = 3
 glow_hdr_threshold = 4.0
 glow_hdr_scale = 4.0
@@ -145,6 +146,11 @@ transform = Transform3D(1, 0, 0, 0, 0.99278766, 0.119886, 0, -0.119886, 0.992787
 light_energy = 2.532
 shadow_enabled = true
 
+[node name="OmniLight3D3" type="OmniLight3D" parent="light3d" unique_id=391459840]
+transform = Transform3D(1, 0, 0, 0, 0.99278766, 0.119886, 0, -0.119886, 0.99278766, 1.0550919, 3.2987494, -0.42819118)
+light_energy = 2.532
+shadow_enabled = true
+
 [node name="Entrance_structure" type="Node3D" parent="." unique_id=972092212]
 
 [node name="invisible_wall" type="MeshInstance3D" parent="Entrance_structure" unique_id=443632342]
@@ -210,3 +216,6 @@ shape = SubResource("ConcavePolygonShape3D_75buv")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1560554891]
 transform = Transform3D(0.0068370327, -0.041701816, 0.9991067, 0, 0.9991301, 0.04170279, -0.99997663, -0.00028512336, 0.006831085, 7.328354, 2.62758, 0.0044134166)
+
+[node name="Player" parent="." unique_id=1946779502 instance=ExtResource("4_2wwxx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9056904, 0.16696519, 2.115702)
