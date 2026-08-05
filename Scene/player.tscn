@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c82xd3ovggq6p"]
+
+[ext_resource type="PackedScene" uid="uid://ckdpfbjorp5m3" path="res://Scene/character.tscn" id="1_kelma"]
+[ext_resource type="Script" uid="uid://4aawg5nr6t8u" path="res://Scripts/player-controller.gd" id="1_y8w33"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g4v7s"]
+radius = 0.22558594
+height = 2.040039
+
+[node name="Player" type="CharacterBody3D" unique_id=1946779502]
+script = ExtResource("1_y8w33")
+
+[node name="Male" parent="." unique_id=1876527881 instance=ExtResource("1_kelma")]
+
+[node name="MainBody" type="CollisionShape3D" parent="." unique_id=754829409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85088205, -0.022864163)
+shape = SubResource("CapsuleShape3D_g4v7s")

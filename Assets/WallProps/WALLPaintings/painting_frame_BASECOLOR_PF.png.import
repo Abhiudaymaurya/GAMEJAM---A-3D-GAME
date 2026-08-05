@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vdop8e6rq633"
-path.etc2="res://.godot/imported/painting_frame_BASECOLOR_PF.png-6e1ae31b31f30fd8ef6f27d2ef800d91.etc2.ctex"
+path.s3tc="res://.godot/imported/painting_frame_BASECOLOR_PF.png-6e1ae31b31f30fd8ef6f27d2ef800d91.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WallProps/WALLPaintings/painting_frame_BASECOLOR_PF.png"
-dest_files=["res://.godot/imported/painting_frame_BASECOLOR_PF.png-6e1ae31b31f30fd8ef6f27d2ef800d91.etc2.ctex"]
+dest_files=["res://.godot/imported/painting_frame_BASECOLOR_PF.png-6e1ae31b31f30fd8ef6f27d2ef800d91.s3tc.ctex"]
 
 [params]
 

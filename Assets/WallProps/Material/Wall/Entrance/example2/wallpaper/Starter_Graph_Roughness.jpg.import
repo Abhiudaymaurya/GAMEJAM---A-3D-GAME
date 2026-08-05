@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ynqom5hk4jit"
-path.etc2="res://.godot/imported/Starter_Graph_Roughness.jpg-de6866362c9469309995792447ffb1b1.etc2.ctex"
+path.s3tc="res://.godot/imported/Starter_Graph_Roughness.jpg-de6866362c9469309995792447ffb1b1.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WallProps/Material/Wall/Entrance/example2/wallpaper/Starter_Graph_Roughness.jpg"
-dest_files=["res://.godot/imported/Starter_Graph_Roughness.jpg-de6866362c9469309995792447ffb1b1.etc2.ctex"]
+dest_files=["res://.godot/imported/Starter_Graph_Roughness.jpg-de6866362c9469309995792447ffb1b1.s3tc.ctex"]
 
 [params]
 
