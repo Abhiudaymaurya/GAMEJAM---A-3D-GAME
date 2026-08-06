@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cswk7wlg5g1s4"
+path="res://.godot/imported/landing sfx small room.ogg-798ef84bbcdfc2c65e52498ce8fa6eee.oggvorbisstr"
+
+[deps]
+
+source_file="res://Audio/landing sfx small room.ogg"
+dest_files=["res://.godot/imported/landing sfx small room.ogg-798ef84bbcdfc2c65e52498ce8fa6eee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
