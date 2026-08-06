@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d24o8o8semv0y"]
+
+[ext_resource type="PackedScene" uid="uid://mmyolgi5dq62" path="res://Assets/Models/Note/A4_Lined_Paper_FBX.fbx" id="1_pgvpe"]
+[ext_resource type="Texture2D" uid="uid://daqx5jqlcvj2r" path="res://Assets/Models/Note/Lined_Paper_Base_Colour.png" id="2_3x8ni"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l778e"]
+albedo_texture = ExtResource("2_3x8ni")
+
+[node name="A4_Lined_Paper_FBX" unique_id=346858092 instance=ExtResource("1_pgvpe")]
+
+[node name="A4_Lined_Paper" parent="." index="1" unique_id=1370419320]
+surface_material_override/0 = SubResource("StandardMaterial3D_l778e")

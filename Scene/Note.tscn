@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c2b8yixt2lt6i"]
+
+[ext_resource type="Script" uid="uid://b55o3nwbi4w02" path="res://Scripts/note.gd" id="1_7icdm"]
+[ext_resource type="PackedScene" uid="uid://d24o8o8semv0y" path="res://Scene/Note_Model.tscn" id="2_6xid5"]
+[ext_resource type="FontFile" uid="uid://mtk7flavkst3" path="res://Assets/Fonts/ComicNeue-Bold.ttf" id="3_7c3qt"]
+[ext_resource type="PackedScene" uid="uid://tnk4db35w227" path="res://Scene/note_ui.tscn" id="4_6xid5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_yf5fn"]
+radius = 0.8462116
+
+[node name="Note" type="Node3D" unique_id=477457984]
+script = ExtResource("1_7icdm")
+
+[node name="Note_Model" parent="." unique_id=346858092 instance=ExtResource("2_6xid5")]
+
+[node name="Detection" type="Area3D" parent="Note_Model" unique_id=1991389689]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note_Model/Detection" unique_id=1738254355]
+shape = SubResource("SphereShape3D_yf5fn")
+
+[node name="InteractLabel" type="Label3D" parent="." unique_id=94415261]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30986077, 0)
+visible = false
+text = "[E] to interact
+"
+font = ExtResource("3_7c3qt")
+font_size = 25
+outline_size = 0
+
+[node name="NoteUI" parent="." unique_id=2132280502 instance=ExtResource("4_6xid5")]
+visible = false
+
+[connection signal="body_entered" from="Note_Model/Detection" to="." method="_on_detection_body_entered"]
+[connection signal="body_exited" from="Note_Model/Detection" to="." method="_on_detection_body_exited"]
