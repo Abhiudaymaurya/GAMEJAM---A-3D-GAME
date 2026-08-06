@@ -13,7 +13,7 @@ Anim = NodePath("Male/AnimationPlayer")
 
 [node name="Male" parent="." unique_id=1876527881 instance=ExtResource("1_kelma")]
 
-[node name="Skeleton3D" parent="Male/Rig" parent_id_path=PackedInt32Array(1876527881, 1243436620) index="0" unique_id=303694518]
+[node name="Skeleton3D" parent="Male/Rig" parent_id_path=PackedInt32Array(1876527881, 1565964850) index="0" unique_id=1561380501]
 bones/0/position = Vector3(-4.5663876e-21, 0.00023935531, 0.00870069)
 bones/0/rotation = Quaternion(0.70162547, -0.08787266, -0.08731089, 0.70169574)
 bones/1/rotation = Quaternion(-0.08302226, 0.11133125, 0.008635128, 0.99027175)

@@ -19,10 +19,10 @@ run/main_scene="uid://bmcmibhd2rlp"
 config/features=PackedStringArray("4.7")
 config/icon="res://icon.svg"
 
-[debug]
+[editor]
 
-settings/stdout/print_fps=true
-settings/stdout/print_gpu_profile=true
+movie_writer/movie_file="C:/games-godot/others/bros_flex.avi"
+movie_writer/disable_vsync=true
 
 [file_customization]
 

@@ -1,11 +1,14 @@
+class_name Player;
 extends CharacterBody3D
 
-const SPEED = 3.0
+@export var Anim : AnimationPlayer;
+@export var CameraRig : Node3D;
+
+const SPEED = 2.0
 const JUMP_VELOCITY = 4.5
 const ROTATION_SPEED = 7.0
 var IS_JUMPING = false
 
-@export var Anim : AnimationPlayer;
 
 func _ready() -> void:
 	Anim.animation_finished.connect(_on_animation_finished_);
@@ -26,8 +29,10 @@ func _physics_process(delta: float) -> void:
 	var direction := Vector3(input_dir.x, 0, input_dir.y).normalized()
 	
 	if direction != Vector3.ZERO:
+		CameraRig.is_player_input_stopped = false;
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		CameraRig.player_velocity_ = velocity.normalized();
 		
 		if !IS_JUMPING and Anim.current_animation != "Rig|man_walk_in_place":
 			Anim.play("Rig|man_walk_in_place");
@@ -37,7 +42,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-		
+		CameraRig.is_player_input_stopped = true;
 		if !IS_JUMPING and Anim.current_animation != "Rig|man_idle":
 			Anim.play("Rig|man_idle")
 	
