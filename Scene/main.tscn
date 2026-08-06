@@ -4,6 +4,7 @@
 [ext_resource type="Material" uid="uid://c2dyl2bh2w1p5" path="res://Assets/WallProps/Material/Wall/Entrance/example2/simple-wallpaper/simple_wallpaper.tres" id="2_r34rm"]
 [ext_resource type="Material" uid="uid://b885841ntig2o" path="res://Assets/WallProps/Material/ceiling/Entrance/ceiling_material.tres" id="3_r34rm"]
 [ext_resource type="PackedScene" uid="uid://c82xd3ovggq6p" path="res://Scene/player.tscn" id="4_2wwxx"]
+[ext_resource type="PackedScene" uid="uid://c2b8yixt2lt6i" path="res://Scene/Note.tscn" id="5_3amdw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rlixt"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -218,3 +219,7 @@ transform = Transform3D(0.0068370327, -0.041701816, 0.9991067, 0, 0.9991301, 0.0
 
 [node name="Player" parent="." unique_id=1946779502 instance=ExtResource("4_2wwxx")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9056904, 0.16696519, 2.115702)
+
+[node name="Note" parent="." unique_id=477457984 instance=ExtResource("5_3amdw")]
+transform = Transform3D(0.03128264, 0, 0.9995106, 0, 1, 0, -0.9995106, 0, 0.03128264, 2.5152402, 0.28999555, -0.5922153)
+text_own = "My name is Rivaan"
