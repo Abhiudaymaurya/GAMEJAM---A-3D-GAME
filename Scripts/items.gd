@@ -9,7 +9,7 @@ const contents := {
 		"name" = "Note 1",
 		"type" = "note",
 		"desc" = "March 17, 2059. Experimet # was progressing faster than intended...",
-		"max" = 1
+		"max" = 3
 	},
 	note2 = {
 	"name" = "Note 2",
