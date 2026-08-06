@@ -25,7 +25,7 @@
 
 ---
 Entrance - Start Point
-    │  - puzzle 
+	│  - puzzle 
 Reception - area
  ┌──┴                    
 Lab (2nd area)   Office -(5th area)
@@ -37,11 +37,11 @@ Library     Storage - (4th area)│
  │                              │
  │                              │
  └───│──────────────────────────┘
-      │
-      │
-      │
+	  │
+	  │
+	  │
  Secret Elevator - locked(need to go to office)
-      │
+	  │
  Boss Arena* -- Last BossFight (as per GameJam rule) 
 ---
 

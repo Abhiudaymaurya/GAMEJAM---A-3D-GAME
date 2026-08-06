@@ -3,6 +3,9 @@
 [ext_resource type="Material" uid="uid://bqetuhsx2xnhk" path="res://Assets/WallProps/Material/Floor/Entrance/agedplanks.tres" id="1_f6udf"]
 [ext_resource type="Material" uid="uid://c2dyl2bh2w1p5" path="res://Assets/WallProps/Material/Wall/Entrance/example2/simple-wallpaper/simple_wallpaper.tres" id="2_r34rm"]
 [ext_resource type="Material" uid="uid://b885841ntig2o" path="res://Assets/WallProps/Material/ceiling/Entrance/ceiling_material.tres" id="3_r34rm"]
+[ext_resource type="PackedScene" uid="uid://c82xd3ovggq6p" path="res://Scene/player.tscn" id="4_2wwxx"]
+[ext_resource type="PackedScene" uid="uid://c2b8yixt2lt6i" path="res://Scene/Note.tscn" id="5_3amdw"]
+[ext_resource type="Script" uid="uid://brf8hyegdp4td" path="res://Scripts/camera_rig.gd" id="6_camera"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rlixt"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -10,12 +13,12 @@ sky_horizon_color = Color(0, 0, 0, 1)
 ground_bottom_color = Color(0, 0, 0, 1)
 ground_horizon_color = Color(0, 0, 0, 1)
 
-[sub_resource type="Sky" id="Sky_f6udf"]
+[sub_resource type="Sky" id="Sky_2wwxx"]
 sky_material = SubResource("ProceduralSkyMaterial_rlixt")
 
 [sub_resource type="Environment" id="Environment_sblpm"]
 background_mode = 2
-sky = SubResource("Sky_f6udf")
+sky = SubResource("Sky_2wwxx")
 tonemap_mode = 3
 glow_hdr_threshold = 4.0
 glow_hdr_scale = 4.0
@@ -136,26 +139,28 @@ environment = SubResource("Environment_sblpm")
 
 [node name="light3d" type="Node3D" parent="." unique_id=872516658]
 
-[node name="OmniLight3D" type="OmniLight3D" parent="light3d" unique_id=1098328569]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0550919, 3.2987494, -3.5629556)
-light_energy = 2.616
+[node name="OmniLight3D3" type="OmniLight3D" parent="light3d" unique_id=391459840]
+transform = Transform3D(1, 0, 0, 0, 0.99278766, 0.119886, 0, -0.119886, 0.99278766, 2.0709825, 2.9765291, -0.42819118)
+light_energy = 1.5
+shadow_enabled = true
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="light3d" unique_id=1530332057]
-transform = Transform3D(1, 0, 0, 0, 0.99278766, 0.119886, 0, -0.119886, 0.99278766, 1.0550919, 3.2987494, 3.55345)
-light_energy = 2.532
+transform = Transform3D(1, 0, 0, 0, 0.99278766, 0.119886, 0, -0.119886, 0.99278766, 1.975184, 2.7293534, 3.55345)
+light_energy = 0.3
+light_specular = 0.2
 shadow_enabled = true
+omni_range = 3.0652199
 
 [node name="Entrance_structure" type="Node3D" parent="." unique_id=972092212]
 
 [node name="invisible_wall" type="MeshInstance3D" parent="Entrance_structure" unique_id=443632342]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5616097, 2.0160997, -0.08563414)
-visible = false
 mesh = SubResource("ArrayMesh_3amdw")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Entrance_structure/invisible_wall" unique_id=1919621863]
+visible = false
 
 [node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="Entrance_structure/invisible_wall/StaticBody3D" unique_id=2043893798]
-visible = false
 shape = SubResource("ConcavePolygonShape3D_1xcnr")
 
 [node name="floor" type="MeshInstance3D" parent="Entrance_structure" unique_id=773876894]
@@ -208,5 +213,19 @@ mesh = SubResource("ArrayMesh_1xcnr")
 [node name="roof_collison" type="CollisionShape3D" parent="Entrance_structure/roof/StaticBody3D" unique_id=801148934]
 shape = SubResource("ConcavePolygonShape3D_75buv")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1560554891]
-transform = Transform3D(0.0068370327, -0.041701816, 0.9991067, 0, 0.9991301, 0.04170279, -0.99997663, -0.00028512336, 0.006831085, 7.328354, 2.62758, 0.0044134166)
+[node name="Player" parent="." unique_id=1946779502 node_paths=PackedStringArray("CameraRig") instance=ExtResource("4_2wwxx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.3720875, 0, 3.8875983)
+CameraRig = NodePath("../CameraRig")
+
+[node name="Note" parent="." unique_id=477457984 instance=ExtResource("5_3amdw")]
+transform = Transform3D(0.03128264, 0, 0.9995106, 0, 1, 0, -0.9995106, 0, 0.03128264, 2.5152402, 0.28999555, -0.5922153)
+text_own = "My name is Rivaan"
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=2110057257 node_paths=PackedStringArray("player")]
+script = ExtResource("6_camera")
+player = NodePath("../Player")
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=718233885]
+transform = Transform3D(0.2403213, -0.1602109, 0.9573809, 0, 0.98628557, 0.16504788, -0.9706934, -0.03966452, 0.23702542, 5.8, 2.4, 3.9999998)
+current = true
+fov = 60.0
