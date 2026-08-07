@@ -19,6 +19,10 @@ run/main_scene="uid://bmcmibhd2rlp"
 config/features=PackedStringArray("4.7")
 config/icon="res://icon.svg"
 
+[autoload]
+
+NoteBookManager="*uid://bsxqyicoxuhrr"
+
 [editor]
 
 movie_writer/movie_file="C:/games-godot/others/bros_flex.avi"
