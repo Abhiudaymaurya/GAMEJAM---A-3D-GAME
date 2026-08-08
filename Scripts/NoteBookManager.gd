@@ -12,6 +12,6 @@ static var Notes : Dictionary = {
 }
 
 
-static func get_note(note_name):
+func get_note(note_name):
 	return Notes[note_name]
 	

@@ -1,5 +1,5 @@
 class_name ITEMS
-extends RefCounted
+extends Node
 
 const note1 := "note1"
 const note2 := "note2"
@@ -8,7 +8,7 @@ const contents := {
 	note1 = {
 		"name" = "Note 1",
 		"type" = "note",
-		"desc" = "March 17, 2059. Experimet # was progressing faster than intended...",
+		"desc" = "March 17, 2059. Experiment # was progressing faster than intended...",
 		"max" = 3
 	},
 	note2 = {

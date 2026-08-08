@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://bqetuhsx2xnhk" path="res://Assets/WallProps/Material/Floor/Entrance/agedplanks.tres" id="1_f6udf"]
 [ext_resource type="Material" uid="uid://c2dyl2bh2w1p5" path="res://Assets/WallProps/Material/Wall/Entrance/example2/simple-wallpaper/simple_wallpaper.tres" id="2_r34rm"]
 [ext_resource type="Material" uid="uid://b885841ntig2o" path="res://Assets/WallProps/Material/ceiling/Entrance/ceiling_material.tres" id="3_r34rm"]
-[ext_resource type="PackedScene" uid="uid://c82xd3ovggq6p" path="res://Scene/player.tscn" id="4_2wwxx"]
+[ext_resource type="PackedScene" uid="uid://dxtlby7ubti0b" path="res://Scene/player.res" id="4_1xcnr"]
 [ext_resource type="PackedScene" uid="uid://c2b8yixt2lt6i" path="res://Scene/Note.tscn" id="5_3amdw"]
 [ext_resource type="Script" uid="uid://brf8hyegdp4td" path="res://Scripts/camera_rig.gd" id="6_camera"]
 
@@ -213,12 +213,13 @@ mesh = SubResource("ArrayMesh_1xcnr")
 [node name="roof_collison" type="CollisionShape3D" parent="Entrance_structure/roof/StaticBody3D" unique_id=801148934]
 shape = SubResource("ConcavePolygonShape3D_75buv")
 
-[node name="Player" parent="." unique_id=1946779502 node_paths=PackedStringArray("CameraRig") instance=ExtResource("4_2wwxx")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.3720875, 0, 3.8875983)
+[node name="Player" parent="." unique_id=1946779502 node_paths=PackedStringArray("CameraRig") instance=ExtResource("4_1xcnr")]
+transform = Transform3D(-0.19485858, 0, 0.9808313, 0, 1, 0, -0.9808313, 0, -0.19485858, 1.6161172, 0.1808654, 3.4435153)
 CameraRig = NodePath("../CameraRig")
 
 [node name="Note" parent="." unique_id=477457984 instance=ExtResource("5_3amdw")]
-transform = Transform3D(0.03128264, 0, 0.9995106, 0, 1, 0, -0.9995106, 0, 0.03128264, 2.5152402, 0.28999555, -0.5922153)
+transform = Transform3D(0.03128264, 0, 0.9995106, 0, 1, 0, -0.9995106, 0, 0.03128264, 2.5152402, 0.14757669, -0.5922153)
+Note_Name = "Security"
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=2110057257 node_paths=PackedStringArray("player")]
 script = ExtResource("6_camera")
