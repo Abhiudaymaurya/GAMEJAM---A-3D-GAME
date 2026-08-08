@@ -1,8 +1,8 @@
 class_name INVENTORY
-extends RefCounted
+extends Node
 
 class InventorySlot:
-	extends  RefCounted
+	extends  Node
 	var key: String
 	var count: int
 

@@ -2,7 +2,10 @@ class_name Player;
 extends CharacterBody3D
 
 @export var Anim : AnimationPlayer;
+@export var localAnim : AnimationPlayer;
 @export var CameraRig : Node3D;
+@export var pause_player_movement = false;
+@onready var flash_light_body = $%Flashlight
 
 const SPEED := 2.0
 const JUMP_VELOCITY := 4.5
@@ -12,25 +15,33 @@ var IS_JUMPING := false
 var IS_JUMPING_last_state := false
 var IS_MOVING := false
 var IS_RUNNING := false
+var Flash_Light := false
 
 func _ready() -> void:
 	Anim.animation_finished.connect(_on_animation_finished_);
-	
 	var volume_db = (clamp(SETTINGS.volume, 0.0, 1.25) * 80) - 80
 	node_audio_loop.volume_db = volume_db
 	node_audio_single.volume_db = volume_db
-
+	
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
+	if Input.is_action_just_pressed("Flashlight"):
+		flashlight();
+		
+	if pause_player_movement: return;
+		
 	if is_on_floor() and !Anim.is_playing() and !IS_JUMPING:
 		Anim.play("Rig|man_idle")
-
+		
+	
 	if Input.is_action_just_pressed("Space") and is_on_floor() and !IS_JUMPING:
 		IS_JUMPING = true;
 		velocity.y = JUMP_VELOCITY
 		Anim.play("Rig|man_jump_in_place")
+		if Flash_Light:
+			Flash_Light = false;
 		
 		if IS_JUMPING_last_state != IS_JUMPING:
 			IS_JUMPING_last_state = IS_JUMPING
@@ -98,3 +109,15 @@ func _sound_update() -> void:
 		node_audio_loop.play()
 	else:
 		node_audio_loop.stop()
+		
+
+# -------------------------FLASHLIGHT----------------------------------------
+
+func flashlight() -> void:
+	if Flash_Light:
+		Flash_Light = false;
+		localAnim.play_backwards("Torch_Rise");
+	else:
+		Flash_Light = true;
+		localAnim.play("Torch_Rise");
+	flash_light_body.visible = Flash_Light;
